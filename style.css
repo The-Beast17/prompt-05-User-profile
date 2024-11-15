@@ -1,0 +1,130 @@
+*{
+    margin :0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+html, body{
+     height : 100%;
+     width : 100%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+    padding :1vw 7vw 0 2vw;
+    position : fixed;
+    top :0;
+    color:white;
+}
+
+
+nav .logo{
+    height : 2vw;
+    font-size: 1vw;
+}
+nav ul{
+    display: flex;
+     gap : 5vw;
+}
+nav ul a{
+    text-decoration: none;
+    padding :0.6vw 2vw;
+    border-radius: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.25s linear;
+    color:white;
+}
+nav ul a:hover {
+    background-color: white;
+    color: black; 
+}
+
+.page1{
+  width : 100%;
+  height :100%;
+  background-color: #131a24;
+  color:white;
+}
+
+.page1 .empty{
+   height : 10%;
+}
+
+.page1 .content{
+    height :90%;
+    width : 100%;
+    display: flex;
+}
+.page1 .left{
+    height: 100%;
+    width: 50%; 
+    padding : 7vw 0;
+    padding-left : 5vw;
+    /* text-align: center; */
+}
+
+.page1 .left h2{
+    font-size: 3vw;
+    padding : 1vw 0;
+    font-weight: 700;
+    
+}
+.page1 .left h1{
+    font-size: 3vw;
+    font-weight: 800;
+    color:gray; 
+}
+.page1 .left p{
+    font-size: 1vw;
+    padding-right :2vw;
+    line-height: 1.5vw;  
+}
+
+.page1 button{
+    padding : 1vw 2vw;
+    margin : 2vw 0;
+    font-size: 1vw;
+    font-weight : 600;
+    border-radius: 3vh;
+    border : none;
+    background-color: orange;
+}
+
+.page1 button:hover{
+    background-color: rgb(255, 196, 0);
+}
+
+.page1 .contact a{
+    height : 6vh;
+    width : 8vh;
+    background-color: rgb(102, 8, 8);
+    font-size: 4vh;
+    text-decoration: none;
+    border-radius: 50%;
+    padding :1vh;
+    color:white;
+}   
+
+.page1 .contact a:nth-child(2){
+   margin : 0 2vw; 
+}
+
+.page1 .right{
+    height:100%;
+    width : 50%;
+    /* border-left: 2px solid grey; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page1 .right img{
+    height : 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
